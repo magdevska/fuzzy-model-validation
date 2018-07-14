@@ -1,5 +1,5 @@
 function data = generateValidationData2
-    initialCond = rand(23,1) .* [1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e3 1e3 1e3 1e3 1e3 1e2 1e2 1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e5 1e5]';
+    initialCond = 0.01 * rand(23,1) .* [1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e3 1e3 1e3 1e3 1e3 1e2 1e2 1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e5 1e5]';
     initialC = 20*rand(1);
     
     df = differential(initialC);

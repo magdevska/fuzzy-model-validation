@@ -1,7 +1,7 @@
 function data = generateValidationData
     tEnd = 180;
     initialConc = [2,5,10,20];
-    initialCond = rand(23,1) .* [1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e3 1e3 1e3 1e3 1e3 1e2 1e2 1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e5 1e5]';
+    initialCond = 0.01 * rand(23,1) .* [1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e3 1e3 1e3 1e3 1e3 1e2 1e2 1e4 1e4 1e4 1e4 1e4 1e4 1e4 1e5 1e5]';
 
     start = 1;
     data = zeros(tEnd/6,24);
